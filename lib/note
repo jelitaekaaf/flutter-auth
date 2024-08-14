@@ -1,0 +1,9 @@
+'This command should be run from the root of your Flutter project.'
+ls
+cd .\project_flutter\
+flutter run
+
+sinkronus   = bekerja satu kali
+asingkronus = 
+parse = umpan
+install intl untuk konversi format tanggal

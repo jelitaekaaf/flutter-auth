@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_flutter/services/auth_sevice.dart';
 import 'auth/login_page.dart';
+import 'kategori/list_page.dart'; // Import halaman Kategori
 
 class HomePage extends StatelessWidget {
   final AuthService _authService = AuthService();
@@ -32,6 +33,16 @@ class HomePage extends StatelessWidget {
             Text(
               'Welcome to Home Page!',
               style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => KategoriPage()),
+                );
+              },
+              child: Text('Kategori'),
             ),
           ],
         ),

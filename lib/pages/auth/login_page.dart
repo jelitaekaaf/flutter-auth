@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
         child: SingleChildScrollView(
           child: Card(
             elevation: 5,
-            color: Colors.indigoAccent[100],
+            color: Color.fromARGB(255, 183, 141, 243),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
@@ -63,7 +63,9 @@ class _LoginPageState extends State<LoginPage> {
                     Center(
                       child: Text(
                         'Login',
+                       
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),
